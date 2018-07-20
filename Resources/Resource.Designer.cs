@@ -54,7 +54,7 @@ namespace BelajarXamarin
 			public const int TranslatedPhoneWord = 2131034115;
 			
 			// aapt resource value: 0x7f050004
-			public const int button1 = 2131034116;
+			public const int TranslationHistoryButton = 2131034116;
 			
 			// aapt resource value: 0x7f050000
 			public const int textView1 = 2131034112;

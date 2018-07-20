@@ -13,13 +13,17 @@ using Android.Widget;
 namespace BelajarXamarin
 {
     [Activity(Label = "TranslationHistoryActivity")]
-    public class TranslationHistoryActivity : Activity
+    public class TranslationHistoryActivity : ListActivity
     {
+
+        //ArrayAdapter<string> ListAdapter = null;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
             // Create your application here
+            var phoneNumbers = Intent.Extras.GetStringArrayList("phone_numbers") ?? new string[0];
+            this.ListAdapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleListItem1, phoneNumbers);
         }
     }
 }
